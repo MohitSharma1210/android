@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="username">abc@lalaWorld@com</string>
+    <string name="password">1debdhffgfegf..</string>
+    <string name="lala">LalaWorld</string>
+    <string name="bitcoin">Bitcoin</string>
+    <string name="ethereum">Ethereum</string>
+    <string name="current">Current Value:250$</string>
+    <string name="current1">Current Value:70$</string>
+    <string name="current2">Current Value:85$</string>
+    <string name="current3">Current Value:345$</string>
+    <string name="current4">Current Value:60$</string>
+    <string name="current5">Current Value:87$</string>
+    <string name="current6">Current Value:25$</string>
+</resources>

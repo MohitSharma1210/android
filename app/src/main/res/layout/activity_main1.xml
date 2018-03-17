@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mohit.assignment.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="#104D7A"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/button_default"
+            android:drawableBottom="@drawable/ic_some" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatTextView"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/appCompatTextView"
+            android:text="@string/username"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:text="@string/password"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+</RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:columnCount="2"
+           android:rowCount="3"
+           android:layout_marginTop="165dp">
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="165dp"
+               android:layout_height="165dp"
+               android:id="@+id/card1"
+               android:foreground="?android:attr/selectableItemBackground"
+               card_view:cardElevation="6dp"
+               card_view:cardCornerRadius="8dp"
+               card_view:cardPreventCornerOverlap="false"
+               card_view:cardUseCompatPadding="true"
+               android:layout_marginStart="10dp">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/appCompatTextView1"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/small_circle"
+                   android:scaleType="fitCenter"
+                   android:paddingStart="10dp"
+                   android:paddingEnd="10dp"
+                   android:drawableStart="@drawable/ic_image" />
+
+               <TextView
+                   android:id="@+id/textViewLala"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colorblack"
+                   android:text="@string/lala" />
+               <TextView
+                   android:id="@+id/textView3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textViewLala"
+                   android:layout_marginTop="118dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colordimGray"
+                   android:text="@string/current" />
+           </android.support.v7.widget.CardView>
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="165dp"
+               android:layout_height="165dp"
+               android:id="@+id/card2"
+               android:foreground="?android:attr/selectableItemBackground"
+               card_view:cardElevation="6dp"
+               card_view:cardCornerRadius="8dp"
+               card_view:cardPreventCornerOverlap="false"
+               card_view:cardUseCompatPadding="true"
+               android:layout_marginStart="10dp">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/appCompatTextView2"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginTop="15dp"
+                   android:paddingStart="9dp"
+                   android:paddingEnd="9dp"
+                   android:background="@drawable/small_circle"
+                   android:drawableStart="@drawable/ic_bitcoins" />
+
+               <TextView
+                   android:id="@+id/textViewBitcoin"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colorblack"
+                   android:text="@string/bitcoin" />
+               <TextView
+                   android:id="@+id/textView4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textViewBitcoin"
+                   android:layout_marginTop="118dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colordimGray"
+                   android:text="@string/current1" />
+
+           </android.support.v7.widget.CardView>
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="165dp"
+               android:layout_height="165dp"
+               android:id="@+id/card3"
+               android:foreground="?android:attr/selectableItemBackground"
+               card_view:cardElevation="6dp"
+               card_view:cardCornerRadius="8dp"
+               card_view:cardPreventCornerOverlap="false"
+               card_view:cardUseCompatPadding="true"
+               android:layout_marginStart="10dp">
+
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/appCompatTextView3"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginTop="15dp"
+                   android:paddingStart="10dp"
+                   android:paddingEnd="10dp"
+                   android:background="@drawable/small_circle"
+                   android:drawableStart="@drawable/ic_etherum" />
+
+               <TextView
+                   android:id="@+id/textViewEthereum"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colorblack"
+                   android:text="@string/ethereum" />
+               <TextView
+                   android:id="@+id/textView5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textViewEthereum"
+                   android:layout_marginTop="118dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colordimGray"
+                   android:text="@string/current2" />
+           </android.support.v7.widget.CardView>
+
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="165dp"
+               android:layout_height="165dp"
+               android:id="@+id/card4"
+               android:foreground="?android:attr/selectableItemBackground"
+               card_view:cardElevation="6dp"
+               card_view:cardCornerRadius="8dp"
+               card_view:cardPreventCornerOverlap="false"
+               card_view:cardUseCompatPadding="true"
+               android:layout_marginStart="10dp">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/appCompatTextView4"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginTop="15dp"
+                   android:paddingStart="10dp"
+                   android:paddingEnd="10dp"
+                   android:background="@drawable/small_circle"
+                   android:drawableStart="@drawable/ic_image" />
+
+               <TextView
+                   android:id="@+id/textViewBitcoin1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colorblack"
+                   android:text="@string/bitcoin" />
+               <TextView
+                   android:id="@+id/textView6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textViewBitcoin1"
+                   android:layout_marginTop="118dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colordimGray"
+                   android:text="@string/current3" />
+           </android.support.v7.widget.CardView>
+
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="165dp"
+               android:layout_height="165dp"
+               android:id="@+id/card5"
+               android:foreground="?android:attr/selectableItemBackground"
+               card_view:cardElevation="6dp"
+               card_view:cardCornerRadius="8dp"
+               card_view:cardPreventCornerOverlap="false"
+               card_view:cardUseCompatPadding="true"
+               android:layout_marginStart="10dp">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/appCompatTextView5"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginTop="15dp"
+                   android:paddingStart="10dp"
+                   android:paddingEnd="10dp"
+                   android:background="@drawable/small_circle"
+                   android:drawableStart="@drawable/ic_etherum" />
+
+               <TextView
+                   android:id="@+id/textViewEthereum1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colorblack"
+                   android:text="@string/bitcoin" />
+               <TextView
+                   android:id="@+id/textView7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textViewEthereum1"
+                   android:layout_marginTop="118dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colordimGray"
+                   android:text="@string/current4" />
+           </android.support.v7.widget.CardView>
+
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="165dp"
+               android:layout_height="165dp"
+               android:id="@+id/card6"
+               android:foreground="?android:attr/selectableItemBackground"
+               card_view:cardElevation="6dp"
+               card_view:cardCornerRadius="8dp"
+               card_view:cardPreventCornerOverlap="false"
+               card_view:cardUseCompatPadding="true"
+               android:layout_marginStart="10dp">
+
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/appCompatTextView6"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginTop="15dp"
+                   android:paddingStart="9dp"
+                   android:paddingEnd="9dp"
+                   android:background="@drawable/small_circle"
+                   android:drawableStart="@drawable/ic_bitcoins" />
+
+               <TextView
+                   android:id="@+id/textViewEthereum2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="100dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colorblack"
+                   android:text="@string/ethereum" />
+               <TextView
+                   android:id="@+id/textView8"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textViewEthereum2"
+                   android:layout_marginTop="118dp"
+                   android:layout_marginStart="10dp"
+                   android:textColor="@color/colordimGray"
+                   android:text="@string/current5" />
+           </android.support.v7.widget.CardView>
+
+
+
+
+       </GridLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
